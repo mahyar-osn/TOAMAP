@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="ThemeStarz">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>TOAMAP - The Othered Auckland</title>
+
+</head>
+
+<body>
+
+<!-- WRAPPER
+=====================================================================================================================-->
+<div class="ts-page-wrapper ts-homepage" id="page-top">
+
+    <!--*********************************************************************************************************-->
+    <!--HEADER **************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+    <header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+
+        <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <!--Brand Logo-->
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/toa-logo.png" alt="" height="50%" width="50%">
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+
+						<li class="nav-item">
+                            <a class="nav-link text-dark" href="">About</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                         <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Whakatakoto kōrero/wā hira / Add Story/Moment
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>
+            <!--end container-->
+        </nav>
+        <!--end #ts-primary-navigation.navbar-->
+
+    </header>
+    <!--end Header-->
+
+    <!-- HERO MAP
+    =================================================================================================================-->
+    <section id="ts-hero" class=" mb-0">
+
+        <!--Fullscreen mode-->
+        <div class="ts-full-screen d-flex">
+
+            <!-- MAP
+            =========================================================================================================-->
+            <div class="ts-map w-100 ts-z-index__1">
+                <div id="ts-map-hero" class="h-100 ts-z-index__1"
+                     data-ts-map-leaflet-provider="http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+                     data-ts-map-leaflet-attribution="&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> &copy;"
+                     data-ts-map-zoom-position="topleft"
+                     data-ts-map-scroll-wheel="0"
+                     data-ts-map-zoom="13"
+                     data-ts-map-center-latitude="-36.848461"
+                     data-ts-map-center-longitude="174.763336"
+                     data-ts-locale="en-US"
+                     data-ts-currency="USD"
+                     data-ts-unit="m<sup>2</sup>"
+                     data-ts-display-additional-info="area_Area;bedrooms_Bedrooms;bathrooms_Bathrooms"
+                >
+                </div>
+            </div>
+
+            <!-- RESULTS
+            =========================================================================================================-->
+            <div class="ts-results__vertical ts-results__grid ts-shadow__sm w-100 scrollbar-inner bg-white ts-z-index__2">
+
+                <!-- FORM
+                =====================================================================================================-->
+                <section class="ts-form__grid" data-bg-color="#f6f6f6">
+
+                    <!--Title-->
+                    <h4 class="font-weight-normal ts-text-color-light">Rapua ngā kōrero / Find Story</h4>
+
+                    <!--Form-->
+                    <form class="ts-form ts-box mb-0" >
+                        <div class="form-row">
+
+                            <!--Keyword-->
+                            <!-- <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, tags, or keyword">
+                                </div>
+                            </div> -->
+
+                            <!--Category-->
+                            <!-- <div class="col-md-3">
+                                <select class="custom-select mb-3" id="type" name="category">
+                                    <option value="">Type</option>
+                                    <option value="1">Apartment</option>
+                                    <option value="2">Villa</option>
+                                    <option value="3">Land</option>
+                                    <option value="4">Garage</option>
+                                </select>
+                            </div> -->
+
+                            <!--Status-->
+                            <!-- <div class="col-md-3">
+                                <select class="custom-select mb-3" id="status" name="status">
+                                    <option value="">Status</option>
+                                    <option value="1">Sale</option>
+                                    <option value="2">Rent</option>
+                                </select>
+                            </div> -->
+
+                            <!--Checkboxes-->
+                            <div id="features-checkboxes" class="w-100">
+                                <h6 class="mb-3">WHAKAPAPARANGA / LAYERS</h6>
+
+                                <div class="ts-column-count-1" id="checkboxes">
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="moments" checked>
+                                        <label class="custom-control-label" for="ch_1">onāianei / moments</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="displacement" checked>
+                                        <label class="custom-control-label" for="ch_2">peinga / displacement</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="accessibility" checked>
+                                        <label class="custom-control-label" for="ch_3">āheitanga / accessibility</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="housing" checked>
+                                        <label class="custom-control-label" for="ch_4">nōhanga / housing</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="te ao Māori" checked>
+                                        <label class="custom-control-label" for="ch_5">te ao Māori</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="past-stories" checked>
+                                        <label class="custom-control-label" for="ch_6">tāhuhu kōrero / past-stories</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="women" checked>
+                                        <label class="custom-control-label" for="ch_7">wāhine / women</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="spiritual" checked>
+                                        <label class="custom-control-label" for="ch_8">wairua / spiritual</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="nature" checked>
+                                        <label class="custom-control-label" for="ch_9">whenua / nature</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="queer" checked>
+                                        <label class="custom-control-label" for="ch_10">takatāpui / queer</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="immigrants" checked>
+                                        <label class="custom-control-label" for="ch_11">tauiwi / immigrants</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="other" checked>
+                                        <label class="custom-control-label" for="ch_12">ērā atu / other</label>
+                                    </div>
+
+                                </div>
+                                <!--end ts-column-count-3-->
+
+                            </div>
+                        </div>
+
+
+                        <div class="ts-center__vertical justify-content-between">
+                            <!--More Options Button-->
+                            <!-- <a href="#more-options-collapse" class="collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="more-options-collapse">
+                                <i class="fa fa-plus-circle ts-text-color-black mr-2 ts-visible-on-collapsed"></i>
+                                <i class="fa fa-minus-circle ts-text-color-black mr-2 ts-visible-on-uncollapsed"></i>
+                                More Options (optional?)
+                            </a>
+ -->
+                            <!--Submit button-->
+                            <!-- <div class="form-group mb-0">
+                                <button type="button" class="btn w-100" id="search-btn">Search</button>
+                            </div> -->
+
+                        </div>
+
+                        <!--Hidden Form-->
+                        <div class="collapse" id="more-options-collapse">
+                            <!--Padding-->
+                            <div class="pt-4">
+                                <!--end row-->
+                                <!--end #features-checkboxes-->
+                            </div>
+                            <!--end Padding-->
+                        </div>
+                        <!--end more-options-collapse-->
+                    </form>
+                    <!--end ts-form-->
+                </section>
+                <!--end ts-form__grid-->
+
+                <!-- TITLE and CONTROLS
+                =====================================================================================================-->
+
+                <!-- <section class="ts-center__vertical justify-content-between px-4 pt-3 pb-0">
+                    <h4 class="font-weight-normal ts-text-color-light mb-0">28 Stories/Moments Found</h4>
+
+                    <div id="display-control" class="d-none d-md-block">
+
+                        <a href="#" class="btn btn-outline-secondary active px-3 mr-2 mb-2 ts-btn-border-muted">
+                            <i class="fa fa-th-large"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary px-3 mb-2 ts-btn-border-muted">
+                            <i class="fa fa-th-list"></i>
+                        </a>
+                    </div>
+
+                </section> -->
+
+                <!-- RESULTS
+                =====================================================================================================-->
+                <!-- <section id="ts-results" class="h-100">
+                    <div class="ts-results-wrapper"></div>
+                </section> -->
+
+            </div>
+            <!--end ts-results-vertical-->
+
+        </div>
+        <!--end full-screen-->
+
+    </section>
+    <!--end ts-hero-->
+
+    <!--*********************************************************************************************************-->
+    <!-- MAIN ***************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+
+    <!--*********************************************************************************************************-->
+    <!--************ FOOTER *************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+    <footer id="ts-footer">
+        <!-- FOOTER
+        =============================================================================================================-->
+        <section id="ts-footer-secondary">
+            <div class="container">
+
+                <!--Copyright-->
+                <div class="ts-copyright">Copyright &copy; TOAMAP 2019</div>
+
+                <!--Social Icons-->
+                <div class="ts-footer-nav">
+                    <nav class="nav">
+                    </nav>
+                </div>
+                <!--end ts-footer-nav-->
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-secondary-->
+
+    </footer>
+    <!--end #ts-footer-->
+
+</div>
+<!--end page-->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/dragscroll.js"></script>
+<script src="assets/js/jquery.scrollbar.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
+<script src="assets/js/leaflet.markercluster.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/map-leaflet.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</body>
+</html>

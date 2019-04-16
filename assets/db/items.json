@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Testing the first moment!",
+    "marker_image": "assets/img/moments/1.jpg",
+    "url": "",
+    "address": "70 Symods Street",
+    "latitude": "-36.856106",
+    "longitude": "174.76642",
+    "layers": ["moments"]
+  },
+  {
+    "id": 2,
+    "title": "Playing wiht a green lizard",
+    "marker_image": "assets/img/moments/2.jpg",
+    "url": "",
+    "address": "85-87 Gladstone Road",
+    "latitude": "-36.8503",
+    "longitude": "174.7863",
+    "layers": ["nature"]
+  },
+  {
+    "id": 3,
+    "title": "Testing the first moment!",
+    "marker_image": "assets/img/moments/1.jpg",
+    "url": "",
+    "address": "70 Symods Street",
+    "latitude": "-36.816106",
+    "longitude": "174.76642",
+    "layers": ["moments"]
+  },
+  {
+    "id": 4,
+    "title": "Playing wiht a green lizard",
+    "marker_image": "assets/img/moments/2.jpg",
+    "url": "",
+    "address": "85-87 Gladstone Road",
+    "latitude": "-36.8506",
+    "longitude": "174.7162",
+    "layers": ["nature"]
+  },
+  {
+    "id": 5,
+    "title": "Testing the first moment!",
+    "marker_image": "assets/img/moments/1.jpg",
+    "url": "",
+    "address": "70 Symods Street",
+    "latitude": "-36.856106",
+    "longitude": "174.76642",
+    "layers": ["moments"]
+  },
+  {
+    "id": 6,
+    "title": "Playing wiht a green lizard",
+    "marker_image": "assets/img/moments/2.jpg",
+    "url": "",
+    "address": "85-87 Gladstone Road",
+    "latitude": "-36.8503",
+    "longitude": "174.7863",
+    "layers": ["nature"]
+  },
+  {
+    "id": 7,
+    "title": "Testing the first moment!",
+    "marker_image": "assets/img/moments/1.jpg",
+    "url": "",
+    "address": "70 Symods Street",
+    "latitude": "-36.856106",
+    "longitude": "174.76642",
+    "layers": ["moments"]
+  },
+  {
+    "id": 8,
+    "title": "Playing wiht a green lizard",
+    "marker_image": "assets/img/moments/2.jpg",
+    "url": "",
+    "address": "85-87 Gladstone Road",
+    "latitude": "-36.8663",
+    "longitude": "174.7863",
+    "layers": ["nature"]
+  }
+]

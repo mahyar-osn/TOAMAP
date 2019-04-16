@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="m.osanlouy" content="TOAMAP">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+
+
+	<title>TOAMAP - The Othered Auckland</title>
+
+</head>
+
+<body>
+
+<!-- WRAPPER
+    =================================================================================================================-->
+<div class="ts-page-wrapper ts-bg" id="page-top">
+
+    <!--*********************************************************************************************************-->
+    <!--HEADER **************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+		<header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+
+        <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <!--Brand Logo-->
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/toa-logo.png" alt="" height="50%" width="50%">
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+						<li class="nav-item">
+                            <a class="btn text-dark btn-sm px-3" href="">Kaupapa / About</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                         <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Whakatakoto kōrero/wā hira / Add Story/Moment
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>
+            <!--end container-->
+        </nav>
+        <!--end #ts-primary-navigation.navbar-->
+
+    </header>
+    <!--end Header-->
+
+    <!--*********************************************************************************************************-->
+    <!-- MAIN ***************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+    <main id="ts-main">
+
+        <!--BREADCRUMB
+            =========================================================================================================-->
+        <section id="breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Submit</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!--PAGE TITLE
+            =========================================================================================================-->
+        <section id="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10">
+                        <div class="ts-title">
+                            <h1>Tukuna tō kōrero pono / Submit your story</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SUBMIT FORM
+            =========================================================================================================-->
+        <section id="submit-form">
+            <div class="container">
+                <div class="row">
+
+                    <div class="offset-lg-1 col-lg-10">
+
+                        <form id="form-submit" class="ts-form">
+
+                            <!--BASIC INFORMATION
+                                =====================================================================================-->
+                            <section id="basic-information" class="mb-5">
+
+                                <!--Title-->
+                                <h3 class="text-muted border-bottom">Pārongo / Information</h3>
+
+                                <!--Row-->
+                                <div class="row">
+
+                                    <!--Title-->
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="title">Taitara / Title</label>
+                                            <input type="text" class="form-control" id="title" name="title" required>
+                                        </div>
+                                    </div>
+
+                                    <!--end col-md-4-->
+																		<div id="features-checkboxes" class="w-100">
+				                                <h6 class="mb-3">WHAKAPAPARANGA / LAYERS</h6>
+
+				                                <div class="ts-column-count-3">
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1">
+				                                        <label class="custom-control-label" for="ch_1">onāianei / moments</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2">
+				                                        <label class="custom-control-label" for="ch_2">peinga / displacement</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
+				                                        <label class="custom-control-label" for="ch_3">āheitanga / accessibility</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
+				                                        <label class="custom-control-label" for="ch_4">nōhanga / housing</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
+				                                        <label class="custom-control-label" for="ch_5">te ao Māori</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
+				                                        <label class="custom-control-label" for="ch_6">tāhuhu kōrero / past-stories</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7">
+				                                        <label class="custom-control-label" for="ch_7">wāhine / women</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
+				                                        <label class="custom-control-label" for="ch_8">wairua / spiritual</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
+				                                        <label class="custom-control-label" for="ch_9">whenua / nature</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
+				                                        <label class="custom-control-label" for="ch_10">takatāpui / queer</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
+				                                        <label class="custom-control-label" for="ch_11">tauiwi / immigrants</label>
+				                                    </div>
+
+				                                    <div class="custom-control custom-checkbox">
+				                                        <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
+				                                        <label class="custom-control-label" for="ch_12">ērā atu / other</label>
+				                                    </div>
+
+				                                </div>
+				                                <!--end ts-column-count-3-->
+
+				                            </div>
+                                </div>
+                                <!--end row-->
+                            </section>
+
+                            <!--LOCATION
+                                =====================================================================================-->
+                            <section id="location" class="mb-5">
+
+                                <!--Title-->
+                                <h3 class="text-muted border-bottom">Tauwāhi / Location</h3>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+
+                                        <!--Address-->
+                                        <div class="input-group">
+                                            <label for="address">Te tiriti / Address</label>
+                                            <input type="text" class="form-control border-right-0" id="address">
+                                            <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Find My Location">
+                                                <a class="input-group-text bg-white border-left-0 ">
+                                                    <i class="fa fa-map-marker ts-text-color-primary" id="getUserAddress"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+																				<!--Suburb-->
+                                        <div class="form-group">
+                                            <label for="state">Rohe / Suburb</label>
+                                            <input type="text" class="form-control" id="state" name="suburb" required>
+                                        </div>
+
+                                        <!--City-->
+                                        <div class="form-group">
+                                            <label for="city">Tāone / City</label>
+                                            <input type="text" class="form-control" id="city" name="city" required>
+                                        </div>
+
+                                        <!--ZIP-->
+                                        <div class="form-group mb-0">
+                                            <label for="zip">Waehere poutāpeta / ZIP</label>
+                                            <input type="number" class="form-control" id="zip" name="zip" required>
+                                        </div>
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <!--Map-->
+                                    <div class="col-sm-6">
+																			<p class="note">Enter the exact address or drag the map marker to position and then click on the black marker on the left.</p>
+                                        <div id="ts-map-simple" class="ts-map ts-shadow__sm h-100"
+																						 data-ts-map-leaflet-provider="http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+                                             data-ts-map-zoom="13"
+                                             data-ts-map-center-latitude="-36.848461"
+                                             data-ts-map-center-longitude="174.763336"
+                                             data-ts-map-scroll-wheel="1"
+                                             data-ts-map-controls="0"
+                                             data-ts-map-marker-drag="1">
+                                        </div>
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                </div>
+                                <!--end row-->
+                            </section>
+                            <!--end #location-->
+
+
+                            <!--GALLERY
+                                =====================================================================================-->
+
+                            <!--ADDITIONAL INFORMATION
+                                =====================================================================================-->
+                            <section id="additional-information" class="mb-5">
+
+                                <!--Title-->
+                                <h3 class="text-muted border-bottom">Kōrero roa (kei a koe te tikanga) / Long Story (optional)</h3>
+																	<div class="container">
+																		<div id="features-checkboxes" class="w-100">
+																			<div class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" id="ch_13" name="features[]" value="ch_13">
+																					<label class="custom-control-label" for="ch_13">Waiho tōku kōrero / Leave my moment alone</label>
+																			</div>
+																			<div class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" id="ch_14" name="features[]" value="ch_14">
+																					<label class="custom-control-label" for="ch_14">Māku e whakawhānui tōku kōrero ki te rangitaki (tukuna tō wāhitau īmera) / I would like to expand on this story in the blog (pls. add your email)</label>
+																			</div>
+																			<div class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" id="ch_15" name="features[]" value="ch_15">
+																					<label class="custom-control-label" for="ch_15">Mā te rōpu TOAMap tēnei kōrero e whakawhānui (tukuna tō wāhitau īmera) / I would like the TOAMAP team to expand this story futher (pls. add your email)</label>
+																			</div>
+																	  </div>
+																</div>
+																<p></p>
+
+                                <!--Description-->
+                                <div class="form-group">
+                                    <label for="description">Kōrero/wā hira / Story/Moment</label>
+                                    <textarea class="form-control" id="description" rows="4" name="description"></textarea>
+                                </div>
+
+                                <!--Row-->
+                            </section>
+                            <!--end #additional-information-->
+														<section id="gallery" class="mb-5">
+
+																<!--Title-->
+																<h3 class="text-muted border-bottom">Whakaahua / Gallery</h3>
+
+																<!--File upload-->
+																<div class="file-upload-previews"></div>
+																<div class="file-upload">
+																		<input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+																		<span><i class="fa fa-plus-circle"></i>Pāwhiri, tōia ngā whakaahua rānei, ki konei / Click or drag images here</span>
+																</div>
+
+														</section>
+
+
+                            <hr>
+
+                            <section class="py-3">
+                                <button type="submit" onclick="window.location=" class="btn btn-primary ts-btn-arrow btn-lg float-right">Submit
+                                </button>
+                            </section>
+
+                        </form>
+                        <!--end #form-submit-->
+
+                    </div>
+                    <!--end offset-lg-1 col-lg-10-->
+                </div>
+                <!--end row-->
+            </div>
+            <!--end container-->
+        </section>
+
+    </main>
+    <!--end #ts-main-->
+
+    <!--*********************************************************************************************************-->
+    <!--************ FOOTER *************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+		<footer id="ts-footer">
+        <!-- FOOTER
+        =============================================================================================================-->
+        <section id="ts-footer-secondary">
+            <div class="container">
+
+                <!--Copyright-->
+                <div class="ts-copyright">Copyright &copy; TOAMAP 2019</div>
+
+                <!--Social Icons-->
+                <div class="ts-footer-nav">
+                    <nav class="nav">
+                    </nav>
+                </div>
+                <!--end ts-footer-nav-->
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-secondary-->
+
+    </footer>
+    <!--end #ts-footer-->
+
+</div>
+<!--end page-->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
+<script src="assets/js/jQuery.MultiFile.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/map-leaflet.js"></script>
+<script src="assets/js/submit.js"></script>
+
+</body>
+</html>
