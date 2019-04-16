@@ -3,11 +3,11 @@ var simpleReverseGeocoding = function(lat, lon) {
     return response.json();
   }).then(function(json) {
     window.address = json.address
-    var data = eval(address); // this will convert your json string to a javascript object
+    var data = eval(address);
     var addressList = []
     for (var key in data) {
-        if (data.hasOwnProperty(key)) { // this will check if key is owned by data object and not by any of it's ancestors
-            addressList.push(key)// this will show each key with it's value
+        if (data.hasOwnProperty(key)) {
+            addressList.push(key)
         }
     }
     console.log(json.address)
