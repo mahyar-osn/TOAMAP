@@ -61,20 +61,25 @@
                         <!--SUBMIT (Main level)
                         =============================================================================================-->
 
-						<li class="nav-item">
-                            <a class="nav-link text-dark" href="">About</a>
-                        </li>
+                        <li class="nav-item">
+                           <a class="btn btn-sm m-1 px-3" href="submit.html">
+                               <i class="fa small mr-2"></i>
+                               Kaupapa / About
+                           </a>
+                       </li>
 
                         <!--SUBMIT (Main level)
                         =============================================================================================-->
                          <li class="nav-item">
-                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                            <a class="btn btn-sm m-1 px-2" href="submit.html">
                                 <i class="fa fa-plus small mr-2"></i>
                                 Whakatakoto kōrero/wā hira / Add Story/Moment
                             </a>
+                            <!-- <a class="btn btn-sm m-1 px-4" href="#">
+                                <i class="fa small mr-2"></i>
+                                Kaupapa / About
+                            </a> -->
                         </li>
-
-
                     </ul>
                     <!--end Right navigation-->
 
@@ -128,39 +133,61 @@
                     <!--Form-->
                     <form class="ts-form ts-box mb-0" >
                         <div class="form-row">
-
-                            <!--Keyword-->
-                            <!-- <div class="col-md-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, tags, or keyword">
-                                </div>
-                            </div> -->
-
-                            <!--Category-->
-                            <!-- <div class="col-md-3">
-                                <select class="custom-select mb-3" id="type" name="category">
-                                    <option value="">Type</option>
-                                    <option value="1">Apartment</option>
-                                    <option value="2">Villa</option>
-                                    <option value="3">Land</option>
-                                    <option value="4">Garage</option>
-                                </select>
-                            </div> -->
-
-                            <!--Status-->
-                            <!-- <div class="col-md-3">
-                                <select class="custom-select mb-3" id="status" name="status">
-                                    <option value="">Status</option>
-                                    <option value="1">Sale</option>
-                                    <option value="2">Rent</option>
-                                </select>
-                            </div> -->
-
                             <!--Checkboxes-->
                             <div id="features-checkboxes" class="w-100">
                                 <h6 class="mb-3">WHAKAPAPARANGA / LAYERS</h6>
 
                                 <div class="ts-column-count-1" id="checkboxes">
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="te ao Māori" checked>
+                                      <label class="custom-control-label" for="ch_5">te ao Māori</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="past-stories" checked>
+                                      <label class="custom-control-label" for="ch_6">tāhuhu kōrero / past-stories</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="women" checked>
+                                      <label class="custom-control-label" for="ch_7">wāhine / women</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="queer" checked>
+                                      <label class="custom-control-label" for="ch_10">takatāpui / queer, trans, intersex</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="accessibility" checked>
+                                      <label class="custom-control-label" for="ch_3">āheitanga / accessibility</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="spiritual" checked>
+                                      <label class="custom-control-label" for="ch_8">wairua / spiritual</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="housing" checked>
+                                      <label class="custom-control-label" for="ch_4">nōhanga / housing</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="displacement" checked>
+                                      <label class="custom-control-label" for="ch_2">peinga / displacement</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="immigrants" checked>
+                                      <label class="custom-control-label" for="ch_11">tauiwi / immigrants</label>
+                                  </div>
+
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="nature" checked>
+                                      <label class="custom-control-label" for="ch_9">whenua / nature</label>
+                                  </div>
 
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="moments" checked>
@@ -168,58 +195,37 @@
                                     </div>
 
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="displacement" checked>
-                                        <label class="custom-control-label" for="ch_2">peinga / displacement</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="accessibility" checked>
-                                        <label class="custom-control-label" for="ch_3">āheitanga / accessibility</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="housing" checked>
-                                        <label class="custom-control-label" for="ch_4">nōhanga / housing</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="te ao Māori" checked>
-                                        <label class="custom-control-label" for="ch_5">te ao Māori</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="past-stories" checked>
-                                        <label class="custom-control-label" for="ch_6">tāhuhu kōrero / past-stories</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="women" checked>
-                                        <label class="custom-control-label" for="ch_7">wāhine / women</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="spiritual" checked>
-                                        <label class="custom-control-label" for="ch_8">wairua / spiritual</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="nature" checked>
-                                        <label class="custom-control-label" for="ch_9">whenua / nature</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="queer" checked>
-                                        <label class="custom-control-label" for="ch_10">takatāpui / queer</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="immigrants" checked>
-                                        <label class="custom-control-label" for="ch_11">tauiwi / immigrants</label>
-                                    </div>
-
-                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="other" checked>
                                         <label class="custom-control-label" for="ch_12">ērā atu / other</label>
+                                    </div>
+
+                                    <style>
+                                    * {
+                                      margin: 0;
+                                      padding: 0;
+                                    }
+                                    div {
+                                      width: 100%;
+                                    }
+                                    div.containerrr {
+                                      height: 100%;
+                                    }
+                                    div.containerrr,
+                                    div.b-containerrr {
+                                    }
+                                    div.aaa {
+                                      margin-top: 5rem;
+                                      margin-left: 10rem;
+                                      height: 70px;
+                                      top: 0;
+                                      z-index: 2;
+                                    }
+                                  </style>
+
+                                    <div class="containerrr">
+                                      <div class="aaa">
+                                    <a href="layers.html" class="btn btn-outline-dark mb-4">What are the layers?</a>
+                                    </div>
                                     </div>
 
                                 </div>
@@ -229,19 +235,8 @@
                         </div>
 
 
-                        <div class="ts-center__vertical justify-content-between">
-                            <!--More Options Button-->
-                            <!-- <a href="#more-options-collapse" class="collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="more-options-collapse">
-                                <i class="fa fa-plus-circle ts-text-color-black mr-2 ts-visible-on-collapsed"></i>
-                                <i class="fa fa-minus-circle ts-text-color-black mr-2 ts-visible-on-uncollapsed"></i>
-                                More Options (optional?)
-                            </a>
- -->
-                            <!--Submit button-->
-                            <!-- <div class="form-group mb-0">
-                                <button type="button" class="btn w-100" id="search-btn">Search</button>
-                            </div> -->
 
+                        <div class="ts-center__vertical justify-content-between">
                         </div>
 
                         <!--Hidden Form-->
@@ -333,12 +328,11 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/dragscroll.js"></script>
 <script src="assets/js/jquery.scrollbar.min.js"></script>
+<script src="assets/js/map-leaflet.js"></script>
 <script src="assets/js/leaflet.js"></script>
 <script src="assets/js/leaflet.markercluster.js"></script>
-<script src="assets/js/custom.js"></script>
-<script src="assets/js/map-leaflet.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>
