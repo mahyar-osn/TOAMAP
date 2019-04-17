@@ -9,19 +9,6 @@
     }
 
 })();
-// window.emailTest = function (){
-//   Email.send({
-//       Host : 'smtp.gmail.com',
-//       Username : "jessekhora@gmail.come",
-//       Password : "fackE3$news45",
-//       To : 'mahyar.osn@gmail.com',
-//       From : "jessekhora@gmail.com",
-//       Subject : "This is the subject",
-//       Body : "And this is the body"
-//   }).then(
-//     message => alert(message)
-//   );
-// }
 
 
 window.onresize = function()
