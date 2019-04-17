@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="m.osanlouy" content="TOAMAP">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+
+
+	<title>TOAMAP - The Othered Auckland</title>
+
+</head>
+
+<body>
+
+<!-- WRAPPER
+    =================================================================================================================-->
+<div class="ts-page-wrapper ts-bg" id="page-top">
+
+    <!--*********************************************************************************************************-->
+    <!--HEADER **************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+		<header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+
+        <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <!--Brand Logo-->
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/toa-logo.png" alt="" height="50%" width="50%">
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+												<li class="nav-item">
+                            <a class="btn text-dark btn-sm px-3" href="">Kaupapa / About</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                         <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Whakatakoto kōrero/wā hira / Add Story/Moment
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>
+            <!--end container-->
+        </nav>
+        <!--end #ts-primary-navigation.navbar-->
+
+    </header>
+    <!--end Header-->
+
+    <!--*********************************************************************************************************-->
+    <!-- MAIN ***************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+    <main id="ts-main">
+
+        <!--BREADCRUMB
+            =========================================================================================================-->
+        <section id="breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!--PAGE TITLE
+            =========================================================================================================-->
+						<section id="page-title">
+		            <div class="container">
+		                <div class="ts-title">
+		                    <h1>Kaupapa / About</h1>
+		                </div>
+		                <!--end ts-title-->
+		            </div>
+		            <!--end container-->
+		        </section>
+
+				<section id="about-us-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+
+                        <p class="h3">
+													He timatanga – A beginning
+                        </p>
+                        <p>
+Tēna tātou kua rauika mai ki te hoe i tēnei waka, he mahere matawhenua rerekē. Ko tātou tēra e hono ana i roto i tēnei mahi. Hei timata, anei ngā kupu aumihi ki ngā mana whenua o Tāmaki. He tika ki te mihi atu ki a rātou, a Ngāti Pāoa, Ngāi Tai, Te Wai-o-Hua me Ngā Oho, Ngāti Whātua-o-Ōrākei, Ngāti Te Ata, rātou ko Te Kawerau-a-Maki. Nā rātou tēnei whenua, nā rātou ngā ingoa e maha i tapaina. Ko Tāmakinui (great Tāmaki), Tāmaki-makau-rau (Tāmaki of a hundred lovers), me Tāmaki-herehere-ngā-waka (Tāmaki that binds many canoes). Koia nei ngā pakiwaitara o te rohe nei. Kei Tāmaki mātou e noho ana, kei Tāmaki tātou e ātete ana.
+                        </p>
+											  <p>
+												Welcome those who have gathered to carry this kaupapa, the redrawing of a familiar map. Those of us who began this, join with those of you who will contribute to that other map. First however, we must acknowledge those whose lands we stand on in the greater Auckland region, Ngāti Pāoa, Ngāi Tai, Te Wai-o-Hua and Ngā Oho, Ngāti Whātua-o-Ōrākei, Ngāti Te Ata, and Te Kawerau-a-Maki. This is their land, and it is from them we have a number of names for what became known as Auckland, Tāmakinui (great Tāmaki), Tāmaki-makau-rau (Tāmaki of a hundred lovers), and Tāmaki-herehere-ngā-waka (Tāmaki that binds many canoes). These are the stories of this region. Here, in Tāmaki, is where we live, here too, in Tāmaki, is where we resist.
+												</p>
+
+
+                        <p class="h3">
+													TOAMap – The Othered Auckland Map
+                        </p>
+                        <p>
+The Othered Auckland Map, at its inception and throughout its existence, acknowledges too the whakapapa in which it came to be. This is a map which, rather than mapping the land as traditionally hegemonic maps have done, instead maps an othered perspective, story, voice and traces of the past. In 2018 we came across <a href="https://www.queeringthemap.com/">Queering The Map</a>, which they created as a “community-generated mapping project that geo-locates queer moments, memories and histories in relation to physical space”. As part of that, they also acknowledged the land in which the project began as being the “traditional territory of the Kanien’kehá:ka”. They go on to explain, “the island called ‘Montreal’ is known as Tiotia:ke in the language of the Kanien’kehá:ka”. They then encouraged the map visitors to visit <a href="https://www.native-land.ca">Native Land</a> a to find out on which indigenous peoples’ land you stand on. Here, in Aotearoa, there is <a href="http://www.maorimaps.com">Maori Maps</a> as a means of finding local marae. Like Queering The Map, we encourage you to use tools such as these as a means of taking steps toward decolonisation by supporting local iwi.
+                        </p>
+											  <p>
+From these maps, we thought about the importance of counter-mapping; of providing an alternative, or in many cases, an experienced perspective of land – and the meaning of ones relationship to land. Of rewriting the image one sees when looking at and using a cartographers dividing lines, borders. Here, we present The Othered Auckland map. A map where the continuous layers of relationships and stories that have always existed can be seen and heard in a space that has long been dominated and defined by the mainstream.
+												</p>
+
+
+                        <p class="h3">
+													Kaupapa - Framework
+                        </p>
+                        <p>
+Some in the world are indifferent to maps. Maps are just a tool to enable them to find the next place to consume, to eat, to enjoy, passively. For others and on the contrary, maps are the record of their bleak life, of being born in a grim geography, in the wrong place at the wrong time. For them, maps are the reminder of wars, of loss, and of stolen homes.                         </p>
+											  <p>
+													Others believe maps signal their right to unearth the “unknown”, to discover the “exotic”, to divide lands and oceans. The world is their backyard in which they are entitled to explore. Maps allow them to forget, if they had ever known, their understanding of the land, of their habitat, of their world and of course of their forgotten roots. To them, maps are like money, ideological, abstract two-dimensional images, signifying power and domination over the others. However, for us, maps can be the reminder, the documentation, of a different story, of another story. Here, we aim to counter the former narrative of domination. We want to tell an-othered story. We thought of the value of including the stories and the emotions that exist in a place because of peoples’ relationship to place. Of the experiences had, the movements that have occurred, the gentrification that has uplifted our oldest neighbours. Of creating a space so that new stories can also exist, side-by-side. A space that validates all other stories.
+												</p>
+											  <p>
+													Mapping is highly ideological, and the ways that maps are projected, read, and understood are deeply rooted in colonial power structures, the global market economy and coercive geopolitics of modern nation-states. Ideological maps are the mainstream maps, which show the world as equal, flat, homogenous and even, and void of any meaning. Maps are designed to dominate the mind, the perception and the emotions, and therefore, they dominate everyday life and subsequently the spaces of everyday life. Through domination, maps slowly reshape the reality, eliminating all the differences, the different, and the othered, as if they never existed. Here, we want to counter the map, we want to bring all the difference, the different and the othered onto the map – our own map – layer upon layer, story next to story and begin to outline a history of the histories.
+												</p>
+											  <p>
+													The Othered Auckland Map is a different map of Tāmaki Makaurau, simply telling the stories that have been, are, or will be erased by the dominant systems of cartography (map-making in a common sense) of this colonised city. It is a people-generated mapping, as the inhabitants of Tāmaki Makaurau inform and shape the map through an in-put mechanism, which will be reviewed and moderated by our team of researchers and story-tellers. It geo-locates the other or othered or othering stories of the city, the memories, histories and imagination of different places in Tāmaki. It aims to project and document the counter-narrative of the city that is understated and marginalised by both the media and mainstream maps of the city, including official maps or digital maps such as Google Maps and Apple Maps.
+												</p>
+											  <p>
+													We hope toamap presents a more complex, multi-layered and heterogeneous narrative of Tāmaki Makaurau – its history and its future. We aim to make this project as inclusive and diverse as possible, to depict how a seemingly homogenous and bland city can and does have multiple concealed and imaginary layers and dimensions.
+												</p>
+
+
+												<p class="h3">
+													Etymology of TOA
+												</p>
+												<p>
+TOA is an abbreviation of The Othered Auckland. We believe that there is another city, beneath Auckland and its colonial legacies. In our view, to the dominant group, the othered Auckland is Tāmaki Makaurau. That is why we didn’t use the indigenous name of these territories here, to name and reinforce the process of colonisation of the land and life. Although, it was not our conscious decision, we are honoured that the word toa in Te Reo Māori refers to courage, bravery and boldness. Hopefully, we can do justice to this word and its meanings.
+												</p>
+
+												<p class="h3">
+													How TOAMap works
+												</p>
+												<p>
+													TOAMap, as we discussed above, is not just a map to be used or consumed: you are part of the story of TOAMap and in fact you can leave your trace-story on this digital representation of Tāmaki. Simply, the map has two parts. One part is about you, and your input. In this part, you tell us a story and you roughly draw a circle around it, be it a mundane but repressed moment, a different bus stop, an everyday history of a place for displaced people of the earth, or a story of ancestors of this land, the history, forgotten, or forced not to be remembered.
+												<p>
+													The second part is the output, the resulting layers that are put together by our volunteers. We help you to document the othered narratives of the city, by layering your stories over the abstract, meaningless lines of what is known as the map of the city. In this way, we show the world, and the future, that Tāmaki had and has many more layers than what can be seen on a mainstream map. Layers that show the complexity, the feelings, the emotions, the pain and joy of the city. These layers are both based on your input and our own research to validate the data and avoid bias and inaccuracies. Some of the entries to the site will be the everyday and personal moments of life, these moments – on the conditions mentioned in agreed Kaupapa of the site – remain as a trace on the fabric of the city, while other entries that have socio-political and/or historical significance will become part of the output layers.
+												</p>
+												<p>
+													Lastly, we acknowledge that this is an ongoing project and may face technical and human errors, so we sincerely apologise for all the human errors and we will fix the non-human ones as soon as possible. Please feel free to contact us if you notice any technical issues, inappropriate input, inaccurate statements, or any other enquiry. Our email address is end-to-end encrypted to protect the identity of the people who would like to contact us.
+												</p>
+
+												<p class="h3">
+													Moderation
+												</p>
+												<p>
+													The notion of othered is not defined here, if anyone perceives themselves or their story as othered in relation to the dominant narrative of society and the space it produces, then we accept it as othered. Yet, we moderate the content based on the historically and socially conscious understanding of domination, supported by academic and intellectual references. Therefore, we exclude the racist, sexist, ableist and homophobic stories, along with any kind of discriminatory stories towards a specific minority group, in all its forms, whether it be literally, metaphorically or spiritually. If you see anything you feel should be removed or complexified, or would like something you posted to be deleted, please contact us.
+												<p>
+
+                    </div>
+                    <!--end col-md-8-->
+                    <div class="col-md-4"></div>
+                    <!--end col-md-4-->
+                </div>
+                <!--end row-->
+                <hr class="my-5">
+            </div>
+            <!--end container-->
+        </section>
+
+
+    </main>
+    <!--end #ts-main-->
+
+    <!--*********************************************************************************************************-->
+    <!--************ FOOTER *************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+		<footer id="ts-footer">
+        <!-- FOOTER
+        =============================================================================================================-->
+        <section id="ts-footer-secondary">
+            <div class="container">
+
+                <!--Copyright-->
+                <div class="ts-copyright">Copyright &copy; TOAMAP 2019</div>
+
+                <!--Social Icons-->
+                <div class="ts-footer-nav">
+                    <nav class="nav">
+                    </nav>
+                </div>
+                <!--end ts-footer-nav-->
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-secondary-->
+
+    </footer>
+    <!--end #ts-footer-->
+
+</div>
+<!--end page-->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
+<script src="assets/js/jQuery.MultiFile.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/map-leaflet.js"></script>
+<script src="assets/js/submit.js"></script>
+
+</body>
+</html>

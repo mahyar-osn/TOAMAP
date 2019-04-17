@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="m.osanlouy" content="TOAMAP">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24"></script>
+
+
+	<title>TOAMAP - The Othered Auckland</title>
+
+</head>
+
+<body>
+
+<!-- WRAPPER
+    =================================================================================================================-->
+<div class="ts-page-wrapper ts-bg" id="page-top">
+
+    <!--*********************************************************************************************************-->
+    <!--HEADER **************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+		<header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+
+        <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <!--Brand Logo-->
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/toa-logo.png" alt="" height="50%" width="50%">
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+												<li class="nav-item">
+                            <a class="btn text-dark btn-sm px-3" href="">Kaupapa / About</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                         <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Whakatakoto kōrero/wā hira / Add Story/Moment
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
+            </div>
+            <!--end container-->
+        </nav>
+        <!--end #ts-primary-navigation.navbar-->
+
+    </header>
+    <!--end Header-->
+
+    <!--*********************************************************************************************************-->
+    <!-- MAIN ***************************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+    <main id="ts-main">
+
+        <!--BREADCRUMB
+            =========================================================================================================-->
+        <section id="breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Layers</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!--PAGE TITLE
+            =========================================================================================================-->
+						<section id="page-title">
+		            <div class="container">
+		                <div class="ts-title">
+		                    <h1>WHAKAPAPARANGA / LAYERS</h1>
+		                </div>
+		                <!--end ts-title-->
+		            </div>
+		            <!--end container-->
+		        </section>
+
+				<section id="about-us-description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+Firstly we would like to acknowledge the essence of each of these concepts as they are, but we would also like to make clear that each layer exists in relationship to the others in many ways. It is that interconnectedness we hope these layers, and the stories you lay upon them, address through the words and voices of those who experience them.
+												</p>
+
+                        <p class="h3">
+													1.     te ao Māori
+                        </p>
+                        <p>
+													This layer shows and documents moments and stories that are relevant to the spatiality of te ao Māori, tangata whenua and indigenous geographies of Tamaki Makaurau. While te ao Māori is and will be central to many people in Aotearoa, we find the dominant ‘story’ often marginalises it. Therefore, descriptions in this layer can be the narrative not often heard of in mainstream discourse, but in actual fact are indeed the first narratives of or for historical events, places and people on this land. It can also include personal narratives of what it is like to be Māori in Tamaki Makaurau. We acknowledge that to be tangata whenua is to be of the land, and its geographies, and hence the stories about this interconnectedness are significantly valuable to us and to The Othered Auckland project.
+                        </p>
+
+                        <p class="h3">
+													2.     tāhuhu kōrero / past-stories
+                        </p>
+                        <p>
+This layer can be history, but also includes what is not his-story. It is reflective of omissions, manipulation and alteration of that history. It is the old stories of places and the land, of events and memories. It is impossible to evaluate the accuracy of some of these past-stories but we will assess them one by one with open hearts and minds and with ethical and social responsibilities, before publishing them on the map permanently. These stories are important to TOA as a means of looking backward in order to look forward.
+</p>
+
+												<p class="h3">
+													Etymology of TOA
+												</p>
+												<p>
+TOA is an abbreviation of The Othered Auckland. We believe that there is another city, beneath Auckland and its colonial legacies. In our view, to the dominant group, the othered Auckland is Tāmaki Makaurau. That is why we didn’t use the indigenous name of these territories here, to name and reinforce the process of colonisation of the land and life. Although, it was not our conscious decision, we are honoured that the word toa in Te Reo Māori refers to courage, bravery and boldness. Hopefully, we can do justice to this word and its meanings.
+												</p>
+
+												<p class="h3">
+													3.     wāhine / women
+												</p>
+												<p>
+													This layer asks those who identify as women, whatever that means or looks like to you, to speak of those moments where your woman-ness has interacted with the space around you and vice-versa. Whether you have been labelled as such beyond your control, dismissed or welcomed, or whether you have been in your power in any given space - or whether this all happens at once. Certain spaces are often not safe for women, and other spaces deliberately give that power back to women, TOA hopes to see these and name them for what they are.
+												</p>
+
+												<p class="h3">
+													4.     takatāpui / queer, trans, intersex
+
+												</p>
+												<p>
+													Conceptualisations of this project stemmed from a project called <a href="https://www.queeringthemap.com/">Queering The Map</a> where
+													any and all stories regarding one’s queerness, whatever that may look like to you, were
+													able to be recorded in the place they occured. We hope this layer serves that purpose while
+													also allowing for literal space to voice and visibilise these lives and experiences both in their
+													beauty and their difficulty. This can also be an opportunity to indicate safe spaces in Tāmaki
+													Makaurau.
+												<p>
+
+												<p class="h3">
+													5.     āheitanga / accessibility
+												</p>
+												<p>
+													These moments are to acknowledge physically the ease, or severe lack thereof, of access
+													in different parts of Tāmaki Makaurau. It is to reflect too on how these physical barriers or supports may result in othering part of our community. It is to imagine too the ways in which spaces could be created so any-body may interact as they please without difficulty or harm.
+												<p>
+
+												<p class="h3">
+													6.     wairua / spiritual
+												</p>
+												<p>
+													These reflections are the interactions one has beyond the physical space around them, in
+													whatever shape or form that occurs. We understand the interconnectedness of all the
+													spaces around us in all its manifestations.
+												<p>
+
+												<p class="h3">
+													7.     nōhanga / housing
+												</p>
+												<p>
+													We are in a housing crisis, TOA acknowledges the very long thread of deliberate decisions
+													and causes that have led to a shortage of safe and warm homes - however that may look
+													for a person or family. This layer is to discuss those decisions, to reflect on their
+													results, and to describe the real life consequences, both physical and emotional in all its
+													forms. It may be stories regarding a specific house or a location or a rohe that means home to you.
+												<p>
+
+												<p class="h3">
+													8.     peinga / displacement
+												</p>
+												<p>
+													This layer may connect to other layers and ultimately describes any sense of
+													non-belonging, through whatever process led to that removal. It may be the physical place
+													which caused the displacement, or it could be where it happened, it may be historical or it
+													may occur in the future. It may be your very arrival in Tāmaki Makaurau, it may be the
+													historical trauma from being removed from your land.
+												<p>
+
+												<p class="h3">
+													9.     tauiwi / immigrants
+												</p>
+												<p>
+Part of the modern life, whether in favour of our well-being as a collective being on this planet, or an imposed disorder to create a profitable imbalance, is the phenomenon of immigration. This layer is a reflection of the immigrant’s life, the stories, moments, joys and pains. It is not a space to discuss the concept or politics of immigration, but a platform to eco the stories of immigration to gain a better understanding of the feeling of being a stranger, a local and a worldly being all at the same time, beyond the time and the place, in Tāmaki Makaurau.
+												<p>
+
+												<p class="h3">
+													10.   whenua / nature
+												</p>
+												<p>
+													The land and all its descendants, Papatūānuku and her tamariki, her mokopuna. The trees,
+													the plants, the shrubs, the bush, the flowers, the leaves, the flax, the roots, the sand, the
+													dirt… all that is living around us, those whom are often not relegated as being, or a being.
+													Here, to those of us who cannot speak for those beings, we ask that you reflect on your interactions with them.
+												<p>
+
+												<p class="h3">
+													11.   ērā atu / other
+												</p>
+												<p>
+													A final layer for any-other who may not fit into the previous categories, or fits into them all at once, or for something we have not yet thought of or experienced.
+												<p>
+
+												<p class="h3">
+												</p>
+												<p>
+This part of the project is a work in progress, so bare with us while we are trying to grasp the scale and complexity of the project in order to communicate all the elements more clearly. Meanwhile, feel free to help us with you kind suggestions and feedback. 												<p>
+
+
+                    </div>
+                    <!--end col-md-8-->
+                    <div class="col-md-4"></div>
+                    <!--end col-md-4-->
+                </div>
+                <!--end row-->
+                <hr class="my-5">
+            </div>
+            <!--end container-->
+        </section>
+
+
+    </main>
+    <!--end #ts-main-->
+
+    <!--*********************************************************************************************************-->
+    <!--************ FOOTER *************************************************************************************-->
+    <!--*********************************************************************************************************-->
+
+		<footer id="ts-footer">
+        <!-- FOOTER
+        =============================================================================================================-->
+        <section id="ts-footer-secondary">
+            <div class="container">
+
+                <!--Copyright-->
+                <div class="ts-copyright">Copyright &copy; TOAMAP 2019</div>
+
+                <!--Social Icons-->
+                <div class="ts-footer-nav">
+                    <nav class="nav">
+                    </nav>
+                </div>
+                <!--end ts-footer-nav-->
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-secondary-->
+
+    </footer>
+    <!--end #ts-footer-->
+
+</div>
+<!--end page-->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/leaflet.js"></script>
+<script src="assets/js/jQuery.MultiFile.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/map-leaflet.js"></script>
+<script src="assets/js/submit.js"></script>
+
+</body>
+</html>
