@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import request
+import config
 import smtplib
 import json
 from flask_cors import CORS, cross_origin
@@ -26,8 +27,8 @@ def geoLocation2():
     fileStrAlert = json.loads(Data)['address']['road']
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("jessekhora@gmail.com", "fackE3$news45")
-    server.sendmail("jessekhora@gmail.com", "jessekhorasanee@gmail.com", fileStrAlert)
+    server.login("config.email", "config.password")
+    server.sendmail("config.email", "destinationemail@gmail.com", fileStrAlert)
     server.quit()
     return "Geo location added"
 if __name__ == '__main__':
